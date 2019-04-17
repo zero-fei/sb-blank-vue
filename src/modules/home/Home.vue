@@ -9,7 +9,7 @@
     import { mapState } from 'vuex';
 
     export default {
-        name: "home",
+        name: "Home",
         computed: mapState({
             title: (state) => state.home.title
         }),
