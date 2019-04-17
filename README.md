@@ -1,5 +1,6 @@
-# vue-project
+# sb-blank-vue
 
+集成vue、vue-router、vuex的脚手架工具，陆续会添加示例，以antd-vue版组件库为辅助
 ## Project setup
 ```
 yarn install
@@ -7,7 +8,7 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
+yarn run dev
 ```
 
 ### Compiles and minifies for production
