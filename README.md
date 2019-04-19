@@ -1,6 +1,10 @@
 # sb-blank-vue
 
 集成vue、vue-router、vuex的脚手架工具，陆续会添加示例，以antd-vue版组件库为辅助
+
+目前已实现： mock模拟数据， vue-router、vuex
+
+即将实现：引用Axios工具作io请求，以及typeScript
 ## Project setup
 ```
 yarn install

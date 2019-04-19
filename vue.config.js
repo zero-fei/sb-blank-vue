@@ -4,7 +4,7 @@ const webpack = require('webpack');
 module.exports = {
     pages: {
       index: {
-        entry: 'src/main.js',
+        entry: 'src/main.ts',
         chunks: ['chunk-vendors', 'chunk-common', 'index']
       }
     },
