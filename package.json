@@ -9,7 +9,8 @@
     "mock": "cd mock && node server.js"
   },
   "dependencies": {
-    "ant-design-vue": "^1.3.8",
+    "@antv/data-set": "^0.10.1",
+    "ant-design-vue": "~1.3.8",
     "babel-plugin-import": "^1.11.0",
     "core-js": "^2.6.5",
     "express-http-proxy": "^1.5.1",

@@ -6,17 +6,17 @@
 </template>
 
 <script>
-    import { mapState } from 'vuex';
+    import { Component, Vue } from 'vue-property-decorator';
+    import { Button, Form, Input } from 'ant-design-vue';
+    import VueParticles from 'vue-particles';
+    Vue.use(VueParticles);
 
-    export default {
-        name: "Home",
-        computed: mapState({
-            title: (state) => state.home.title
-        }),
-        data(){
-            return {
-                msg: '我是home组件'
-            }
+    @Component({
+        Button, Form, Input
+    })
+    export default class Home extends Vue {
+        mouted() {
+
         }
     }
 </script>
