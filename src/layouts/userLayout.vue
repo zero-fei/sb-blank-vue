@@ -28,9 +28,10 @@
 
 <style scoped>
     .foot {
-        padding: 0 16px;
-        margin: 48px 0 24px;
         text-align: center;
+        position: absolute;
+        width: 100%;
+        bottom: 5%;
     }
 
 </style>
