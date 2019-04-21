@@ -5,7 +5,7 @@ const home = {
     mutations: {
 
     },
-    action: {
+    actions: {
 
     }
 };

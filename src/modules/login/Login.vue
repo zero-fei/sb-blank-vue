@@ -51,6 +51,7 @@
 
 <script>
     import Vue from 'vue';
+    import { mapActions } from 'vuex';
     import VueParticles from 'vue-particles';
     import { Form, Input, Icon, Button } from 'ant-design-vue';
 
@@ -73,23 +74,16 @@
                 hasErrors,
             }
         },
-        mounted() {
-
-        },
         methods: {
-            userNameError () {
-                const { getFieldError, isFieldTouched } = this.form;
-                return isFieldTouched('userName') && getFieldError('userName');
-            },
-            passwordError () {
-                const { getFieldError, isFieldTouched } = this.form;
-                return isFieldTouched('password') && getFieldError('password');
-            },
+            ...mapActions(['Login', 'Logout']),
             handleSubmit  (e) {
                 e.preventDefault();
+                const { Login, Logout } = this;
                 this.form.validateFields((err, values) => {
                     if (!err) {
-                        console.log('Received values of form: ', values);
+                        Login(values).then(result => {
+                            if(result === 'OK') this.$router.push('/home')
+                        });
                     }
                 });
             },

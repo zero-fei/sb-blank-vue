@@ -30,7 +30,7 @@ function getJsonFilesInDirectory(dir, filters) {
       }
     });
   } catch (e) {
-    console.info('err:', e); // eslint-disable-line
+    console.info('err:', e);
   }
   return files;
 }

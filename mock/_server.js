@@ -27,6 +27,6 @@ applyJsonServer(server);
 // Use static router
 server.use(express.static('./public'));
 
-server.listen(process.env.port || 8090, () => {
-  console.log('JSON Server is running at:', process.env.port || 8090); // eslint-disable-line
+server.listen(process.env.port || 3005, () => {
+  console.log('JSON Server is running at:', process.env.port || 3005);
 });

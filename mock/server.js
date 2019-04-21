@@ -23,7 +23,7 @@ if (npmConfigArgv) {
       watch = true;
     }
   } catch (e) {
-    console.info(e);  // eslint-disable-line
+    console.info(e);
   }
 }
 
